@@ -27,12 +27,12 @@
                   <Font name="Arial" size="18.0" />
                </font>
             </RadioButton>
-            <RadioButton fx:id="radCapp" layoutX="128.0" layoutY="196.0" mnemonicParsing="false" text="Cappuccino 1.25">
+            <RadioButton fx:id="radCapp" layoutX="128.0" layoutY="196.0" mnemonicParsing="false" onAction="#radCappActionPerformed" text="Cappuccino 1.25">
                <font>
                   <Font name="Arial" size="18.0" />
                </font>
             </RadioButton>
-            <RadioButton fx:id="RadTea" layoutX="130.0" layoutY="236.0" mnemonicParsing="false" text="Tea 1.00">
+            <RadioButton fx:id="radTea" layoutX="130.0" layoutY="236.0" mnemonicParsing="false" onAction="#radTeaActionPerformed" text="Tea 1.00">
                <font>
                   <Font name="Arial" size="18.0" />
                </font>

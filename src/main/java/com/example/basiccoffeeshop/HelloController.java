@@ -53,6 +53,28 @@ public class HelloController {
         }
     }
 
+    @FXML
+    public void radCappActionPerformed(ActionEvent event) {
+        // Select coffee option
+        if(radCapp.isSelected()) {
+            radCoffee.setSelected(false);
+            radTea.setSelected(false);
+        }
+    }
+
+
+    @FXML
+    public void radTeaActionPerformed(ActionEvent event) {
+        // Select coffee option
+        if(radTea.isSelected()) {
+            radCoffee.setSelected(false);
+            radCapp.setSelected(false);
+        }
+    }
+
+
+
+
 
 
 }
