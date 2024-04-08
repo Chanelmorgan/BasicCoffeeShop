@@ -9,8 +9,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="523.0" prefWidth="684.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="523.0" prefWidth="684.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.basiccoffeeshop.HelloController">
    <children>
       <Pane prefHeight="525.0" prefWidth="689.0">
          <children>
@@ -23,7 +22,7 @@
                   </Label>
                </children>
             </Pane>
-            <RadioButton fx:id="radCoffee" layoutX="130.0" layoutY="152.0" mnemonicParsing="false" text="Coffee 1.00">
+            <RadioButton fx:id="radCoffee" layoutX="130.0" layoutY="152.0" mnemonicParsing="false" onAction="#radCoffeeActionPerformed" text="Coffee 1.00">
                <font>
                   <Font name="Arial" size="18.0" />
                </font>
@@ -46,14 +45,14 @@
             <CheckBox fx:id="chkCro" layoutX="404.0" layoutY="196.0" mnemonicParsing="false" text="Crossiant 1.15">
                <font>
                   <Font name="Arial" size="18.0" />
-               </font>
+               </font>s
             </CheckBox>
             <CheckBox fx:id="chkTo" layoutX="404.0" layoutY="248.0" mnemonicParsing="false" text="Toast 0.50">
                <font>
                   <Font name="Arial" size="18.0" />
                </font>
             </CheckBox>
-            <TextField fx:id="txtTotal" layoutX="497.0" layoutY="360.0" />
+            <TextField fx:id="txtSub" layoutX="497.0" layoutY="360.0" />
             <TextField fx:id="txtTax" layoutX="497.0" layoutY="412.0" />
             <TextField fx:id="txtTotal" layoutX="497.0" layoutY="467.0" />
             <Label layoutX="417.0" layoutY="365.0" prefHeight="16.0" prefWidth="60.0" text="Subtotal">
