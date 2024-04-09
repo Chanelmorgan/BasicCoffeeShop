@@ -70,7 +70,7 @@
                   <Font name="Arial Bold" size="14.0" />
                </font>
             </Label>
-            <Button fx:id="btnEnt" layoutX="123.0" layoutY="360.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="69.0" text="Enter">
+            <Button fx:id="btnEnt" layoutX="123.0" layoutY="360.0" mnemonicParsing="false" onAction="#btnEntActionPerformed" prefHeight="26.0" prefWidth="69.0" text="Enter">
                <font>
                   <Font name="Arial" size="14.0" />
                </font>

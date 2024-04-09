@@ -55,7 +55,7 @@ public class HelloController {
 
     @FXML
     public void radCappActionPerformed(ActionEvent event) {
-        // Select coffee option
+        // Select capp option
         if(radCapp.isSelected()) {
             radCoffee.setSelected(false);
             radTea.setSelected(false);
@@ -65,12 +65,52 @@ public class HelloController {
 
     @FXML
     public void radTeaActionPerformed(ActionEvent event) {
-        // Select coffee option
+        // Select tea option
         if(radTea.isSelected()) {
             radCoffee.setSelected(false);
             radCapp.setSelected(false);
         }
     }
+
+    public void btnEntActionPerformed(ActionEvent event){
+        double total = 0;
+        double subtotal = 0;
+        final double TAXRATE = 0.08;
+        double tax = 0;
+
+        if(radCoffee.isSelected()){
+            subtotal = subtotal + 1;
+        } else if(radCapp.isSelected()) {
+            subtotal = subtotal + 1.25;
+        } else if(radTea.isSelected()){
+            subtotal = subtotal + 1;
+        }
+
+        if(chkBag.isSelected()) {
+            subtotal = subtotal + 1.25;
+        }
+        if(chkCro.isSelected()){
+            subtotal = subtotal + 1.15;
+        }
+        if(chkTo.isSelected()){
+            subtotal = subtotal + 0.5;
+        }
+
+
+        txtSub.setText(Double.toString(subtotal));
+        subtotal = Double.parseDouble(txtSub.getText());
+        tax = subtotal *TAXRATE;
+        total = tax + subtotal;
+
+        txtTax.setText(Double.toString(tax));
+        txtTotal.setText(Double.toString(total));
+    }
+
+    public void btnExitActionPerformed(ActionEvent event){
+        System.exit(0);
+    }
+
+
 
 
 
