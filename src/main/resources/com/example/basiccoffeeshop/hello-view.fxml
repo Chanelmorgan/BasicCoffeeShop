@@ -75,12 +75,12 @@
                   <Font name="Arial" size="14.0" />
                </font>
             </Button>
-            <Button fx:id="btnExit" layoutX="123.0" layoutY="467.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="69.0" text="Exit">
+            <Button fx:id="btnExit" layoutX="123.0" layoutY="467.0" mnemonicParsing="false" onAction="#btnExitActionPerformed" prefHeight="26.0" prefWidth="69.0" text="Exit">
                <font>
                   <Font name="Arial" size="14.0" />
                </font>
             </Button>
-            <Button fx:id="btnClear" layoutX="123.0" layoutY="412.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="69.0" text="Clear">
+            <Button fx:id="btnClear" layoutX="123.0" layoutY="412.0" mnemonicParsing="false" onAction="#btnClearActionPerformed" prefHeight="26.0" prefWidth="69.0" text="Clear">
                <font>
                   <Font name="Arial" size="14.0" />
                </font>

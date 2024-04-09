@@ -4,6 +4,8 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 
+import java.text.DecimalFormat;
+
 public class HelloController {
     @FXML
     private Label welcomeText;
@@ -73,6 +75,7 @@ public class HelloController {
     }
 
     public void btnEntActionPerformed(ActionEvent event){
+        DecimalFormat df = new DecimalFormat("0.000");
         double total = 0;
         double subtotal = 0;
         final double TAXRATE = 0.08;
@@ -104,10 +107,29 @@ public class HelloController {
 
         txtTax.setText(Double.toString(tax));
         txtTotal.setText(Double.toString(total));
+
+        txtTax.setText(df.format(tax));
+        txtTotal.setText(df.format(total));
+        txtSub.setText(df.format(subtotal));
     }
 
     public void btnExitActionPerformed(ActionEvent event){
+        // Exits the application
         System.exit(0);
+    }
+
+    public void btnClearActionPerformed(ActionEvent event){
+        // Clears the text fields
+        radCoffee.setSelected(false);
+        radCapp.setSelected(false);
+        radTea.setSelected(false);
+        chkBag.setSelected(false);
+        chkCro.setSelected(false);
+        chkTo.setSelected(false);
+        txtTotal.setText("");
+        txtTax.setText("");
+        txtSub.setText("");
+
     }
 
 
